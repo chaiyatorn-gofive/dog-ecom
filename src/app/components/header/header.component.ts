@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public menuOpen:boolean = false
+  constructor(){
 
+  }
+
+  onMenuClick(){
+    this.menuOpen = !this.menuOpen
+  }
 }
