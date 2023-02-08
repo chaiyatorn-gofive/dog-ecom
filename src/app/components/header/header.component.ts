@@ -7,11 +7,21 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   public menuOpen:boolean = false
+  public cartMenuOpen:boolean = false
   constructor(){
 
   }
 
   onMenuClick(){
+    if(this.cartMenuOpen){
+      this.cartMenuOpen = false
+    }
     this.menuOpen = !this.menuOpen
+  }
+  onCartIconClick(){
+    if(this.menuOpen){
+      this.menuOpen = false
+    }
+    this.cartMenuOpen = !this.cartMenuOpen
   }
 }

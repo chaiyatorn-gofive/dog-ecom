@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DogHumanAgePipe } from './shared/pipe/dog-human-age.pipe';
-import { ShopModule } from './components/shop/shop.module';
+import { ShopModule } from './pages/shop/shop.module';
 @NgModule({
   declarations: [AppComponent, DogHumanAgePipe],
-  imports: [BrowserModule, AppRoutingModule,ShopModule],
+  imports: [BrowserModule, AppRoutingModule, ShopModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,12 +1,15 @@
+<app-sidebar [menuOpen]="menuOpen"></app-sidebar>
+<app-cart-sidebar [cartMenuOpen] ='cartMenuOpen'></app-cart-sidebar>
 <div class="flex justify-between pt-8">
   <button  [ngClass]="{'is-active': menuOpen}" (click)="onMenuClick()" class="hamburger hamburger--spin" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
-  <div><img class="w-[35px] h-[35px] object-contain" src="assets/images/shopping-cart.png" alt=""></div>
+  <div><img (click)="onCartIconClick()" class="w-[35px] h-[35px] object-contain relative z-[2]" src="assets/images/shopping-cart.png" alt=""></div>
 </div>
 <div class="mt-4 h-14 flex justify-between">
   <input class="w-full h-full rounded" type="text">
   <button class="min-w-[56px] ml-4 h-full rounded-lg bg-slate-500">f</button>
 </div>
+

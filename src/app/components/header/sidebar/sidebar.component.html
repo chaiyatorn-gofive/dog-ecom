@@ -1,0 +1,13 @@
+<div
+[ngClass]="[ menuOpen ? 'translate-x-0' : '-translate-x-[100vw]']"
+class="fixed bg-red-50 top-0 left-0 w-ful h-screen w-screen transition-all  flex flex-col justify-between px-4 pt-24
+">
+
+<ul class="flex flex-col ">
+  <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+  <li><a routerLink="/shop/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+  
+</ul>
+<div>Language Switcher</div>
+
+</div>
